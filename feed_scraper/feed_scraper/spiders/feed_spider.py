@@ -17,6 +17,11 @@ class FeedSpider(CrawlSpider):
   allowed_domains = [ "kurtmckee.livejournal.com" ]
   start_urls = [ "http://kurtmckee.livejournal.com/"]
 
+# TODO: make init work
+#  def __init__(self, *args, **kwargs):
+#    super(FeedSpider, self).__init__(*args, **kwargs)
+#    start_urls = kwargs.get('start_urls').split(',')
+
   rules = (
         Rule(LinkExtractor(allow=('.*', )), callback='parse_link'),
     )

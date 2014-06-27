@@ -19,3 +19,5 @@ NEWSPIDER_MODULE = 'feed_scraper.spiders'
 DEFAULT_REQUEST_HEADERS = {
   'Accept': 'application/rss+xml, application/rdf+xml, application/atom+xml, application/xml, text/xml',
 }
+
+DEPTH_LIMIT = 1
